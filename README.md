@@ -281,3 +281,17 @@ ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ## Conclusion
 
 This project demonstrates an automated CI/CD pipeline for a containerized full-stack application. GitHub Actions handles code validation, testing, Docker image creation, image publishing to Amazon ECR, and deployment to Amazon EKS using Kubernetes and Kustomize.
+
+## Deployment Evidence
+
+Deployment evidence screenshots are available in the `deployment-screenshots` folder.
+
+The screenshots include:
+
+- Frontend application accessible through the LoadBalancer URL
+- Backend `/movies` API accessible through the LoadBalancer URL
+- Kubernetes resources using `kubectl get all`
+- Backend deployment details using `kubectl describe deploy backend`
+- Frontend deployment details using `kubectl describe deploy frontend`
+- Frontend Docker image in Amazon ECR
+- Backend Docker image in Amazon ECR
