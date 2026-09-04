@@ -102,6 +102,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build frontend
+        run: npm run build
+
       - name: Build Docker image
         run: |
           docker build \
